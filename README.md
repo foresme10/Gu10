@@ -9,9 +9,13 @@
 
 ## 安装
 
-1. 将 `AI-Unlock-Check.sgmodule` 和 `AI-Unlock-Check.js` 放到当前 Surge 配置文件所在目录，两个文件必须保持同级。
-2. 在 Surge 的“模块”中添加本地模块 `AI-Unlock-Check.sgmodule`，然后启用。
-3. 回到 Surge 首页，在策略选择视图底部找到“AI 解锁检测”面板，点击刷新按钮运行检测。
+在 Surge 的“模块”页面选择“安装新模块”，粘贴下面的地址并启用：
+
+```text
+https://raw.githubusercontent.com/foresme10/Gu10/main/AI-Unlock-Check.sgmodule
+```
+
+回到 Surge 首页，在策略选择视图底部找到“AI 解锁检测”面板，点击刷新按钮运行检测。
 
 脚本请求会遵循现有 Surge 规则：ChatGPT 与 Gemini 如果被分流到不同策略组，检测结果也会分别反映各自的真实出口。
 
@@ -41,5 +45,5 @@ AI-Unlock-Check = type=generic,timeout=20,engine=webview,script-path=AI-Unlock-C
 - `https://chatgpt.com/cdn-cgi/trace`
 - `https://gemini.google.com/?hl=en`
 
-模块版本：1.0.0
+模块版本：1.0.1
 
