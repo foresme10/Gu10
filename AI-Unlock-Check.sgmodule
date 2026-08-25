@@ -2,11 +2,12 @@
 #!desc=检测当前 Surge 出口是否可用 ChatGPT 与 Google Gemini；提供信息面板与手动刷新，不需要 MITM。
 #!category=网络检测
 #!author=Codex
-#!version=1.0.0
+#!version=1.0.1
 #!system=ios
 
 [Panel]
 AI 解锁检测 = title="AI 解锁检测",content="点击刷新开始检测",style=info,script-name=AI-Unlock-Check,update-interval=600
 
 [Script]
-AI-Unlock-Check = type=generic,timeout=20,engine=webview,script-path=AI-Unlock-Check.js
+AI-Unlock-Check = type=generic,timeout=20,engine=webview,script-path=https://raw.githubusercontent.com/foresme10/Gu10/main/AI-Unlock-Check.js,script-update-interval=86400
+
